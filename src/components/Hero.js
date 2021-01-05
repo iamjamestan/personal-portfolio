@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Particles from "react-particles-js";
+import {withStyles} from "@material-ui/core/styles";
+import styles from "../styles/HeroStyles";
 
 class Hero extends Component {
     particlesConfig = {
@@ -22,10 +24,13 @@ class Hero extends Component {
     }
 
     render() {
+        const {classes} = this.props;
         return (
-            <Particles id="particles-js" params={this.particlesConfig}/>
+            <div id={"#Home"}>
+                <Particles className={classes.particles} params={this.particlesConfig}/>
+            </div>
         );
     }
 }
 
-export default Hero;
+export default withStyles(styles)(Hero);
