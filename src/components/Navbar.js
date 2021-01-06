@@ -11,7 +11,6 @@ class Navbar extends Component {
 
     render() {
         const {isHero, classes} = this.props;
-        const str = "#Contact";
         return (
             <div className={classes.root}>
                 <AppBar position="fixed" color={isHero ? "transparent" : "primary"}>
@@ -21,16 +20,16 @@ class Navbar extends Component {
                         </Typography>
                         <div className={classes.middle}>
                             <Typography variant="subtitle1">
-                                <HashLink smooth to="#Experience">Experience</HashLink>
+                                <HashLink smooth to="#Projects">Projects</HashLink>
                             </Typography>
                             <Typography variant="subtitle1">
-                                <HashLink smooth to="#Projects">Projects</HashLink>
+                                <HashLink smooth to="#Experience">Experience</HashLink>
                             </Typography>
                             <Typography variant="subtitle1">
                                 <HashLink smooth to="#Skills">Skills</HashLink>
                             </Typography>
                         </div>
-                            <HashLink smooth to={str}>
+                            <HashLink smooth to={"#Contact"}>
                                 <Button variant="outlined" color={isHero ? "secondary" : "inherit"}>
                                     contact
                                 </Button>

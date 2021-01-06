@@ -50,8 +50,8 @@ class App extends Component{
                     <Navbar isHero={this.state.isHero}/>
                     <div className={classes.body}>
                         <Hero />
-                        <Experience />
                         <Projects />
+                        <Experience />
                         <Skills />
                         <Contact />
                     </div>
