@@ -1,7 +1,7 @@
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
-        height: `100vh`,
+        minHeight: `100vh`,
         boxSizing: "border-box",
         backgroundColor: "#F5F5F5"
     },
@@ -22,6 +22,18 @@ const styles = (theme) => ({
         height: 200,
     },
     cardContent: {
+    },
+    cardActions: {
+        justifyContent: "center",
+        flexWrap: "wrap"
+    },
+    chip: {
+        color: "#018786",
+        borderColor: "#018786",
+        marginBottom: "3px"
+    },
+    button: {
+        marginBottom: "3px"
     }
 });
 
