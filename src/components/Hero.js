@@ -19,6 +19,7 @@ class Hero extends Component {
             }
         },
         interactivity: {
+            detect_on:"canvas",
             events: {
                 onhover: {
                     enable: true,
@@ -33,10 +34,10 @@ class Hero extends Component {
         return (
             <div id={"Home"} className={classes.root}>
                 <Grid container className={classes.rootGrid} justify={"center"} alignItems={"center"} >
-                    <Grid item xs={"12"} md={"4"} className={classes.intro}>
+                    <Grid item xs={"12"} md={"3"} className={classes.imageContainer}>
                         <img className={classes.image} src={profilepic} alt={"profilepic"}/>
                     </Grid>
-                    <Grid item xs={"12"} md={"4"} className={classes.intro}>
+                    <Grid item xs={"12"} md={"3"} className={classes.intro}>
                         <Typography variant={"h4"} color={"Primary"} >
                             Hello, I'm James.
                         </Typography>

@@ -5,7 +5,6 @@ const styles = (theme) => ({
     particles: {
         backgroundColor: "#121923",
         height: "100vh",
-        zIndex: "10"
     },
     rootGrid: {
         position: "absolute",
@@ -18,12 +17,14 @@ const styles = (theme) => ({
         textAlign: "center",
         "& a": {
             textDecoration: "none",
-
-        }
+        },
+        flexWrap: "wrap"
     },
-    image : {
-        width: "13rem",
-        height: "13rem"
+    imageContainer: {
+        textAlign: "center",
+        "& img":  {
+            width: "13rem",
+        },
     },
     button: {
         marginTop: "25px"
