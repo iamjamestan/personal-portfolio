@@ -21,7 +21,7 @@ const styles = (theme) => ({
         "&:before": {
             content: "''",
             position: "absolute",
-            height: "100%",
+            height: "calc(100% - 2px)",
             border: "1px solid tan",
             right: "40px",
             top: 0
