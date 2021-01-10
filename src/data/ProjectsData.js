@@ -1,10 +1,11 @@
 import portfolio from "../images/portfolio.png";
 import HairStyleX from "../images/HairStyleX.png";
 import SupperJio from "../images/SupperJio.png";
+import CustomSnooze from "../images/CustomSnooze.png"
 
 export default [
     {
-        title: "SupperJio Telegram bot",
+        title: "SupperJio Telegram Bot",
         imageLink: SupperJio,
         description: "A telegram bot developed to help collate supper orders in telegram groups, with over 1000 daily users in NUS.",
         links: {
@@ -14,7 +15,7 @@ export default [
         },
         skills: [
             "NodeJS",
-            "PostGreSQL",
+            "PostgreSQL",
             "Heroku"
         ]
     },
@@ -34,6 +35,18 @@ export default [
         ]
     },
     {
+        title: "CustomSnooze",
+        imageLink: CustomSnooze,
+        description: "An iOS and Android application that allows users to set alarms with customisable snooze intervals, built over a course of 24 hours during Hack&Roll 2021.",
+        links: {
+            github: "https://github.com/rt-terror/custom-snooze-alarm",
+        },
+        skills: [
+            "Flutter",
+            "Dart"
+        ]
+    },
+    {
         title: "Personal Portfolio",
         imageLink: portfolio,
         description: "This very website that you are viewing😁! Developed with ReactJS, Material-UI components, and cloud hosting (Netlify).",
@@ -44,7 +57,7 @@ export default [
         skills: [
             "ReactJS",
             "Material-UI",
-            "WebStorm"
+            "JSS"
         ]
     },
 ];

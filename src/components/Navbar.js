@@ -16,7 +16,7 @@ class Navbar extends Component {
                 <AppBar position="fixed" color={isHero ? "transparent" : "primary"}>
                     <Toolbar className={classes.toolbar}>
                         <Typography variant="h5">
-                            <HashLink smooth to="#">Portfolio</HashLink>
+                            <HashLink smooth to="#">jamestanyuli</HashLink>
                         </Typography>
                         <div className={classes.middle}>
                             <Typography variant="subtitle1">
