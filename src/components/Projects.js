@@ -32,20 +32,12 @@ class Projects extends Component {
                         </Typography>
                     </CardContent>
                     <CardActions className={classes.cardActions}>
-                        {project.links.github &&
-                        <Button className={classes.button} size="small" variant="outlined" color="black" href={project.links.github} endIcon={<LaunchIcon/>}>
-                            Github
-                        </Button>
-                        }
-                        {project.links.documentation &&
-                        <Button className={classes.button} size="small" variant="outlined" color="black" href={project.links.documentation} endIcon={<LaunchIcon/>}>
-                            Documentation
-                        </Button>
-                        }
-                        {project.links.demo &&
-                        <Button className={classes.button} size="small" variant="outlined" color="black" href={project.links.demo} endIcon={<LaunchIcon/>}>
-                            Demo
-                        </Button>
+                        {
+                            Object.entries(project.links).map(l =>
+                                <Button className={classes.button} size="small" variant="outlined" color="black" href={l[1]} endIcon={<LaunchIcon/>}>
+                                    {l[0]}
+                                </Button>
+                            )
                         }
                     </CardActions>
                     <CardActions className={classes.cardActions}>
