@@ -1,6 +1,7 @@
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
+        paddingBottom: `${theme.mixins.toolbar.minHeight}px`,
         minHeight: `100vh`,
         boxSizing: "border-box",
         backgroundColor: "#F5F5F5"
