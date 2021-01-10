@@ -3,8 +3,39 @@ import styles from "../styles/ExperienceStyles";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import {Container} from "@material-ui/core";
+import experienceData from "../data/ExperienceData";
 
 class Experience extends Component {
+
+    renderExperiences(classes) {
+        return experienceData.map(e => e.type === "year"
+            ?
+            <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                {e.year}
+            </Typography>
+            :
+            <div className={classes.timeLineItem}>
+                <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
+                    {e.title}
+                </Typography>
+                <Typography variant={"body1"} align={"left"} color={"secondary"}>
+                    {e.subHeading}
+                </Typography>
+                {
+                    e.details.map(d =>
+                        <ul style={{ margin:0, color: "tan"}}>
+                            <li>
+                                <Typography variant={"subtitle1"} align={"justify"} style={{color: "tan"}}>
+                                    {d}
+                                </Typography>
+                            </li>
+                        </ul>
+                    )
+                }
+            </div>
+        );
+    }
+
     render() {
         const {classes} = this.props;
         return (
@@ -14,62 +45,7 @@ class Experience extends Component {
                         Experience
                     </Typography>
                     <div className={classes.timeLine}>
-                        <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                            2021
-                        </Typography>
-                        <div className={classes.timeLineItem}>
-                            <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
-                                Teaching Assistant
-                            </Typography>
-                            <Typography variant={"body1"} align={"left"} color={"secondary"}>
-                                company name where worked
-                            </Typography>
-                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan"}}>
-                                I taught asynchronous programming, blah blah blah blah blah blah blah blah blah blah blah
-                            </Typography>
-                        </div>
-                        <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                            2020
-                        </Typography>
-                        <div className={classes.timeLineItem}>
-                            <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
-                                Teaching Assistant
-                            </Typography>
-                            <Typography variant={"body1"} align={"left"} color={"secondary"}>
-                                company name where worked
-                            </Typography>
-                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan"}}>
-                                I taught asynchronous programming, blah blah blah blah blah blah blah blah blah blah blah
-                            </Typography>
-                        </div>
-                        <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                            2019
-                        </Typography>
-                        <div className={classes.timeLineItem}>
-                            <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
-                                Teaching Assistant
-                            </Typography>
-                            <Typography variant={"body1"} align={"left"} color={"secondary"}>
-                                company name where worked
-                            </Typography>
-                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan"}}>
-                                I taught asynchronous programming, blah blah blah blah blah blah blah blah blah blah blah
-                            </Typography>
-                        </div>
-                        <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                            2018
-                        </Typography>
-                        <div className={classes.timeLineItem}>
-                            <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
-                                Teaching Assistant
-                            </Typography>
-                            <Typography variant={"body1"} align={"left"} color={"secondary"}>
-                                company name where worked
-                            </Typography>
-                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan"}}>
-                                I taught asynchronous programming, blah blah blah blah blah blah blah blah blah blah blah
-                            </Typography>
-                        </div>
+                        {this.renderExperiences(classes)}
                     </div>
                 </Container>
             </div>
