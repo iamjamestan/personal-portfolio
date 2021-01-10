@@ -1,6 +1,7 @@
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
+        paddingBottom: `${theme.mixins.toolbar.minHeight}px`,
         minHeight: `100vh`,
         boxSizing: "border-box",
         backgroundColor: "#121923"
@@ -21,7 +22,7 @@ const styles = (theme) => ({
         "&:before": {
             content: "''",
             position: "absolute",
-            height: "calc(100% - 2px)",
+            height: "100%",
             border: "1px solid tan",
             right: "40px",
             top: 0

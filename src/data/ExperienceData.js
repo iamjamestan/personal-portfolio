@@ -1,10 +1,10 @@
 export default [
     {
         type:"item",
-        title: "Teaching Assistant (CS2040)",
+        title: "Lab Teaching Assistant (CS2040)",
         subHeading: "National University of Singapore, Jan 2021 - present",
         details: [
-            "Conducted labs and taught concepts pertaining to algorithmic analysis, sorting, hashing, heaps, trees and graphs"
+            "Taught concepts pertaining to algorithmic analysis, sorting, hashing, heaps, trees and graphs"
         ]
     },
     {
@@ -23,7 +23,7 @@ export default [
     },
     {
         type:"item",
-        title: "Teaching Assistant (CS2030)",
+        title: "Lab Teaching Assistant (CS2030)",
         subHeading: "National University of Singapore, Jan 2020 - May 2020",
         details: [
             "Taught concepts pertaining to object-oriented programming, lazy evaluation, streams, and asynchronous programming.",
