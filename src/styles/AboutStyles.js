@@ -10,7 +10,7 @@ const styles = (theme) => ({
         alignItems: "center"
     },
     title: {
-        marginBottom: `${theme.mixins.toolbar.minHeight}px`,
+        marginBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`,
         marginTop: `${theme.mixins.toolbar.minHeight * 0.5}px`,
     },
     container: {
