@@ -26,7 +26,7 @@ class Navbar extends Component {
                                 <HashLink smooth to="#Experience">Experience</HashLink>
                             </Typography>
                             <Typography variant="subtitle1">
-                                <HashLink smooth to="#Skills">Skills</HashLink>
+                                <HashLink smooth to="#About">About</HashLink>
                             </Typography>
                         </div>
                             <HashLink smooth to={"#Contact"}>

@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import styles from "./styles/AppStyles";
 import { ThemeProvider } from '@material-ui/styles';
 import {withStyles, createMuiTheme} from "@material-ui/core/styles";
-import Skills from "./components/Skills";
+import Skills from "./components/About";
 
 const theme = createMuiTheme({
     palette: {
