@@ -63,8 +63,9 @@ const styles = (theme) => ({
         [theme.breakpoints.up("md")]: {
             width: "44%",
             margin: "1rem",
+            marginLeft: "-0.5%",
             "&:nth-of-type(2n)": {
-                marginLeft: "auto",
+                marginLeft: "53%",
                 borderColor: "tan"
             },
             "&:nth-of-type(2n):before": {
