@@ -21,17 +21,17 @@ class Experience extends Component {
                 <Typography variant={"body1"} align={"left"} color={"secondary"}>
                     {e.subHeading}
                 </Typography>
+                <ul className={classes.experienceDetails}>
                 {
                     e.details.map(d =>
-                        <ul style={{ margin:0, color: "tan"}}>
-                            <li>
-                                <Typography variant={"subtitle1"} align={"justify"} style={{color: "tan", lineHeight:"1.2"}}>
-                                    {d}
-                                </Typography>
-                            </li>
-                        </ul>
+                        <li>
+                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan", lineHeight:"1.2"}}>
+                                {d}
+                            </Typography>
+                        </li>
                     )
                 }
+                </ul>
             </div>
         );
     }

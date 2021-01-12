@@ -13,7 +13,6 @@ export default (theme) => ({
     toolbar: {
         justifyContent:"space-between",
     },
-
     middle: {
         display: "flex",
         "& a": {
@@ -23,4 +22,22 @@ export default (theme) => ({
             textDecoration: "underline",
         },
     },
+    desktop: {
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+        },
+    },
+    mobile: {
+        display: 'flex',
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+    menu: {
+        "& a": {
+            textDecoration: "none",
+            color: "inherit"
+        },
+    }
 });

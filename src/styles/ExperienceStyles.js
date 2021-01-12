@@ -100,6 +100,13 @@ const styles = (theme) => ({
             }
         }
     },
+    experienceDetails: {
+        margin:0,
+        color: "tan",
+        [theme.breakpoints.down("sm")]: {
+            padding:0,
+        }
+    }
 });
 
 export default styles;
