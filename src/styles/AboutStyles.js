@@ -2,7 +2,7 @@ const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
         paddingBottom: `${theme.mixins.toolbar.minHeight}px`,
-        minHeight: `100vh`,
+        height: `fit-content`,
         boxSizing: "border-box",
         backgroundColor: "#F5F5F5",
         display: "flex",
@@ -12,9 +12,6 @@ const styles = (theme) => ({
     title: {
         marginBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`,
         marginTop: `${theme.mixins.toolbar.minHeight * 0.5}px`,
-    },
-    container: {
-        minHeight: "70vh"
     },
     profile: {
         paddingTop: "2rem",

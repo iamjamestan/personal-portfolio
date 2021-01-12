@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import styles from "./styles/AppStyles";
 import { ThemeProvider } from '@material-ui/styles';
 import {withStyles, createMuiTheme} from "@material-ui/core/styles";
-import Skills from "./components/About";
+import About from "./components/About";
 
 const theme = createMuiTheme({
     palette: {
@@ -50,9 +50,9 @@ class App extends Component{
                     <Navbar isHero={this.state.isHero}/>
                     <div className={classes.body}>
                         <Hero />
-                        <Projects />
+                        <About />
                         <Experience />
-                        <Skills />
+                        <Projects />
                         <Contact />
                     </div>
                 </div>

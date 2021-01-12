@@ -52,7 +52,7 @@ class About extends Component {
                     About Me
                 </Typography>
                 <Container>
-                    <Grid container className={classes.container} justify={"center"} spacing={5}>
+                    <Grid container justify={"center"} spacing={5}>
                         <Grid item xs={12} md={5} >
                             <div className={classes.profile}>
                                 <img className={classes.image} src={profilepic} alt={"profilepic"}/>

@@ -20,13 +20,13 @@ class Navbar extends Component {
                         </Typography>
                         <div className={classes.middle}>
                             <Typography variant="subtitle1">
-                                <HashLink smooth to="#Projects">Projects</HashLink>
+                                <HashLink smooth to="#About">About</HashLink>
                             </Typography>
                             <Typography variant="subtitle1">
                                 <HashLink smooth to="#Experience">Experience</HashLink>
                             </Typography>
                             <Typography variant="subtitle1">
-                                <HashLink smooth to="#About">About</HashLink>
+                                <HashLink smooth to="#Projects">Projects</HashLink>
                             </Typography>
                         </div>
                             <HashLink smooth to={"#Contact"}>
