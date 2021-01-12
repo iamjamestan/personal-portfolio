@@ -1,10 +1,13 @@
+import aboutBackground from "../images/background/aboutBackground.jpg";
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
         paddingBottom: `${theme.mixins.toolbar.minHeight}px`,
         height: `fit-content`,
         boxSizing: "border-box",
-        backgroundColor: "#F5F5F5",
+        background: `url(${aboutBackground}) no-repeat center`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
         display: "flex",
         flexDirection: "column",
         alignItems: "center"
@@ -21,7 +24,7 @@ const styles = (theme) => ({
         alignItems: "center",
         justifyContent: "center",
         borderRadius: "10px",
-        backgroundColor: "white",
+        backgroundColor: "rgba(255,255,255,0.8)",
         boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)"
     },
     image: {
@@ -38,7 +41,10 @@ const styles = (theme) => ({
     box: {
         display: "flex",
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "rgba(255,255,255,0.85)",
+        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+        borderRadius: '20px'
     },
     category: {
         display: "inline-flex",
@@ -48,7 +54,10 @@ const styles = (theme) => ({
         minWidth: "20%",
         [theme.breakpoints.down("sm")]: {
             minWidth: "30%",
-        }
+        },
+        backgroundColor: "#018786",
+        borderRadius: '20px 0px 0px 20px',
+        color: "white",
     },
     logos: {
         padding: "0.2em",
@@ -68,13 +77,19 @@ const styles = (theme) => ({
         }
     },
     accordion: {
+        borderRadius: "5px",
         width: "60%",
-        backgroundColor: theme.palette.secondary.main,
-        boxShadow: "none",
-        border: theme.palette.secondary.dark
+        "&:before": {
+            display: "none"
+        },
+    },
+    accordionSummary: {
+        backgroundColor: "#018786",
+        borderRadius: "5px",
+        color: "white",
     },
     accordionDetails: {
-        backgroundColor: "white",
+        backgroundColor: "rgba(255,255,255)",
         borderBottom: "1px solid grey",
         display: "flex",
         justifyContent: "space-between"

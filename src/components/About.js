@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styles from "../styles/AboutStyles";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import {Avatar, Box, Container, Divider, Grid} from "@material-ui/core";
+import {Box, Container,Grid} from "@material-ui/core";
 import profilepic from "../images/profilepic.png";
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -29,9 +29,11 @@ class About extends Component {
     renderSkills(classes) {
         return Object.entries(skills).map(e =>
             <Grid item xs={12} className={classes.skillBlock}>
-                <Box className={classes.box} width={1} height="100%" style={{backgroundColor: "white", borderRadius: '20px'}}>
-                    <Box className={classes.category} height="100%" style={{backgroundColor: "#03DAC6", borderRadius: '20px 0px 0px 20px'}}>
-                        {e[0]}
+                <Box className={classes.box} width={1} height="100%">
+                    <Box className={classes.category} height="100%" >
+                        <Typography variant="body1" align={"center"}>
+                            {e[0]}
+                        </Typography>
                     </Box>
                     <div className={classes.logos}>
                         {e[1].map(s => <div className={classes.logoDiv} style={{}}>
@@ -48,7 +50,7 @@ class About extends Component {
         const {classes} = this.props;
         return (
             <div id={"About"} className={classes.root}>
-                <Typography className={classes.title} variant="h3" align={"center"}>
+                <Typography className={classes.title} variant="h3" align={"center"} color={"primary"}>
                     About Me
                 </Typography>
                 <Container>
@@ -70,9 +72,10 @@ class About extends Component {
                                 </Typography>
                                 <Accordion className={classes.accordion} >
                                     <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
+                                        expandIcon={<ExpandMoreIcon color={"primary"}/>}
                                         aria-controls="panel1a-content"
                                         id="panel1a-header"
+                                        className={classes.accordionSummary}
                                     >
                                         <Typography variant="body1" align={"center"} >Coursework</Typography>
                                     </AccordionSummary>
@@ -81,7 +84,7 @@ class About extends Component {
                             </div>
                         </Grid>
                         <Grid item container xs={12} md={6} className={classes.skills}>
-                            <Typography variant="h4" align={"center"} style={{marginBottom: "1rem", marginTop: "1rem"}}>
+                            <Typography variant="h4" align={"center"} style={{marginBottom: "1rem", marginTop: "1rem"}} color={"primary"}>
                                 Skills
                             </Typography>
                             {this.renderSkills(classes)}

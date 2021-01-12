@@ -41,9 +41,9 @@ class Hero extends Component {
                         <Typography variant={"h5"} color={"Primary"} style={{marginTop: "1rem"}}>
                             and I'm <Typed strings={["a computer science student", "a software engineer", "an educator", "a scholar"]} typeSpeed={40} backSpeed={45} loop/>
                         </Typography>
-                        <HashLink smooth to={"/#Projects"}>
+                        <HashLink smooth to={"/#About"}>
                             <Button variant="contained" color={"secondary"} className={classes.button} endIcon={<ArrowDownwardIcon fontSize={"large"}/>}>
-                                View my work
+                                View More
                             </Button>
                         </HashLink>
                     </Grid>
