@@ -3,7 +3,7 @@ const styles = (theme) => ({
 
     },
     particles: {
-        backgroundColor: "#121923",
+        background: "linear-gradient(#0E1219,#1A2533)",
         height: "100vh",
     },
     rootGrid: {
