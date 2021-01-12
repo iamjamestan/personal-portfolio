@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styles from "../styles/AboutStyles";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import {Box, Container, Divider, Grid} from "@material-ui/core";
+import {Avatar, Box, Container, Divider, Grid} from "@material-ui/core";
 import profilepic from "../images/profilepic.png";
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -29,12 +29,15 @@ class About extends Component {
     renderSkills(classes) {
         return Object.entries(skills).map(e =>
             <Grid item xs={12} className={classes.skillBlock}>
-                <Box classname={classes.box} width={1} height="100%" style={{backgroundColor: "white", borderRadius: '20px'}}>
-                    <Box width="18%" className={classes.category} height="100%" style={{backgroundColor: "#03DAC6", borderRadius: '20px 0px 0px 20px'}}>
+                <Box className={classes.box} width={1} height="100%" style={{backgroundColor: "white", borderRadius: '20px'}}>
+                    <Box className={classes.category} height="100%" style={{backgroundColor: "#03DAC6", borderRadius: '20px 0px 0px 20px'}}>
                         {e[0]}
                     </Box>
                     <div className={classes.logos}>
-                        {e[1].map(s => <span>{s}</span>)}
+                        {e[1].map(s => <div className={classes.logoDiv} style={{}}>
+                                <img src={s} alt="skill" style={{width: "auto", maxWidth:"inherit", maxHeight:"75%"}} />
+                            </div>
+                            )}
                     </div>
                 </Box>
             </Grid>

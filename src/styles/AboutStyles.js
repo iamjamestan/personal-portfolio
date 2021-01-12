@@ -35,22 +35,40 @@ const styles = (theme) => ({
         justifyContent: "center"
     },
     skillBlock: {
-        height: "70px",
+        height: "4rem",
         margin: "0.5rem 0",
     },
     box: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
+        alignItems: "center"
     },
     category: {
         display: "inline-flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        padding: "0 0.5rem",
+        minWidth: "20%",
+        [theme.breakpoints.down("sm")]: {
+            minWidth: "30%",
+        }
     },
     logos: {
         padding: "0.2em",
         display: "inline-flex",
         flexDirection: "row",
+        height: "inherit"
+    },
+    logoDiv: {
+        width: "auto",
+        maxWidth:"10.5vw",
+        height: "inherit",
+        marginLeft: "0.6rem",
+        display: "flex",
+        alignItems:"center",
+        [theme.breakpoints.down("sm")]: {
+            maxWidth: "10vw",
+        }
     },
     accordion: {
         width: "60%",
