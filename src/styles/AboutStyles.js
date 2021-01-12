@@ -11,6 +11,7 @@ const styles = (theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent:"center"
     },
     title: {
         marginBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`,

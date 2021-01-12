@@ -2,7 +2,12 @@ import contactBackground from "../images/background/contactBackground.png"
 const styles = (theme) => ({
     root: {
         paddingBottom: `${theme.mixins.toolbar.minHeight * 1.5}px`,
-        height: `100vh`,
+        minHeight: `100vh`,
+        [theme.breakpoints.down("sm")]: {
+            height: "fit-content",
+            paddingTop: `${theme.mixins.toolbar.minHeight * 1.2}px`,
+            paddingBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`
+        },
         boxSizing: "border-box",
         background: `url(${contactBackground}) no-repeat center`,
         backgroundSize: "cover",
@@ -12,9 +17,6 @@ const styles = (theme) => ({
         overflow: "hidden",
         alignItems: "center",
         justifyContent: "center",
-        "&: div": {
-            flex: "grow"
-        }
     },
     title: {
         marginBottom: `${theme.mixins.toolbar.minHeight * 0.3}px`
@@ -22,11 +24,17 @@ const styles = (theme) => ({
     card: {
         backgroundColor: "rgba(0,0,0,0.6)",
         display: "inline-flex",
+        justifyContent: "center",
+        alignItems: "center",
         flexDirection: "column",
-        width: "80%",
+        minWidth: "80%",
         height: "fit-content",
         borderRadius:"15px",
-        padding:"1.5rem"
+        flexWrap: "wrap",
+        padding:"1.5rem",
+        [theme.breakpoints.down("sm")]: {
+            padding:"1rem",
+        }
     },
     icons: {
         paddingTop:"0.75rem",
