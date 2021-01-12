@@ -1,4 +1,4 @@
-import aboutBackground from "../images/background/aboutBackground.jpg";
+import aboutBackground from "../images/background/aboutBackground.png";
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,
@@ -10,7 +10,7 @@ const styles = (theme) => ({
         backgroundAttachment: "fixed",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
     },
     title: {
         marginBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`,
@@ -24,7 +24,7 @@ const styles = (theme) => ({
         alignItems: "center",
         justifyContent: "center",
         borderRadius: "10px",
-        backgroundColor: "rgba(255,255,255,0.8)",
+        backgroundColor: "rgba(255,255,255,0.85)",
         boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)"
     },
     image: {
@@ -32,6 +32,7 @@ const styles = (theme) => ({
     },
     skills: {
         height: "fit-content",
+        flexGrow: "0",
         justifyContent: "center"
     },
     skillBlock: {

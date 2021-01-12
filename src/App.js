@@ -30,7 +30,8 @@ class App extends Component{
         this.state = {isHero: true}
     }
     handleScroll = () => {
-        if (window.scrollY > window.innerHeight * 0.1) {
+        var scrollMaxY =(document.documentElement.scrollHeight - document.documentElement.clientHeight - 64)
+        if (window.scrollY > window.innerHeight * 0.1 && window.scrollY < scrollMaxY) {
             this.setState({isHero: false});
         } else {
             this.setState({isHero: true});
