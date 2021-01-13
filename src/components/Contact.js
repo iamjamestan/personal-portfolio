@@ -24,13 +24,13 @@ class Contact extends Component {
                             If you'd like to get in touch, feel free to drop me an email at <a style={{color:"inherit"}}href={"mailto:jamestanyuli@gmail.com"}>jamestanyuli@gmail.com</a>, or simply click on the icons below for my social media goodness :)
                         </Typography>
                         <div className={classes.icons}>
-                            <IconButton aria-label="github" href={"https://github.com/iamjamestan"}>
+                            <IconButton aria-label="github" href={"https://github.com/iamjamestan"} target={"_blank"}>
                                 <GitHubIcon color={"primary"} />
                             </IconButton>
-                            <IconButton aria-label="linkedin" href={"https://www.linkedin.com/in/jamestanyuli/"}>
+                            <IconButton aria-label="linkedin" href={"https://www.linkedin.com/in/jamestanyuli/"} target={"_blank"}>
                                 <LinkedInIcon color={"primary"} />
                             </IconButton>
-                            <IconButton aria-label="instagram" href={"https://www.instagram.com/iamjamestan/"}>
+                            <IconButton aria-label="instagram" href={"https://www.instagram.com/iamjamestan/"} target={"_blank"}>
                                 <InstagramIcon color={"primary"} />
                             </IconButton>
                         </div>

@@ -33,7 +33,7 @@ class Projects extends Component {
                     <CardActions className={classes.cardActions}>
                         {
                             Object.entries(project.links).map(l =>
-                                <Button className={classes.button} size="small" variant="outlined" color="black" href={l[1]} endIcon={<LaunchIcon/>}>
+                                <Button className={classes.button} size="small" variant="outlined" color="black" href={l[1]} target={"_blank"} endIcon={<LaunchIcon/>}>
                                     {l[0]}
                                 </Button>
                             )
