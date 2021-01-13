@@ -29,7 +29,7 @@ export default (theme) => ({
         },
     },
     mobile: {
-        display: 'flex',
+        display: 'none',
         [theme.breakpoints.up('sm')]: {
             display: 'none',
         },
