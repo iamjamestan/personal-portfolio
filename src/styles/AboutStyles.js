@@ -1,4 +1,4 @@
-import aboutBackground from "../images/background/aboutBackground.png";
+import aboutBackground from "../images/background/aboutBackground.jpg";
 const styles = (theme) => ({
     root: {
         paddingTop: `${theme.mixins.toolbar.minHeight}px`,

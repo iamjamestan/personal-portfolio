@@ -1,4 +1,4 @@
-import contactBackground from "../images/background/contactBackground.png"
+import contactBackground from "../images/background/contactBackground.jpg"
 const styles = (theme) => ({
     root: {
         paddingBottom: `${theme.mixins.toolbar.minHeight * 1.5}px`,
