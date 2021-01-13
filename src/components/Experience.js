@@ -8,13 +8,14 @@ import experienceData from "../data/ExperienceData";
 class Experience extends Component {
 
     renderExperiences(classes) {
+        let oddExperience =true;
         return experienceData.map(e => e.type === "year"
             ?
             <Typography variant={"h4"} className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                 {e.year}
             </Typography>
             :
-            <div className={classes.timeLineItem}>
+            <div className={classes.timeLineItem} data-aos={oddExperience ? "fade-right" : "fade-left"}>
                 <Typography variant={"h6"} align={"left"} className={classes.subHeading}>
                     {e.title}
                 </Typography>
@@ -32,6 +33,7 @@ class Experience extends Component {
                     )
                 }
                 </ul>
+                {oddExperience = !oddExperience}
             </div>
         );
     }

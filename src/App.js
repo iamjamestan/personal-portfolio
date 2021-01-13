@@ -8,6 +8,8 @@ import styles from "./styles/AppStyles";
 import { ThemeProvider } from '@material-ui/styles';
 import {withStyles, createMuiTheme} from "@material-ui/core/styles";
 import About from "./components/About";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const theme = createMuiTheme({
     palette: {
@@ -39,6 +41,7 @@ class App extends Component{
     }
     componentDidMount(){
         window.addEventListener('scroll', this.handleScroll);
+        Aos.init({duration: 500});
     }
     componentWillUnmount(){
         window.removeEventListener('scroll', this.handleScroll);

@@ -28,7 +28,7 @@ class About extends Component {
 
     renderSkills(classes) {
         return Object.entries(skills).map(e =>
-            <Grid item xs={12} className={classes.skillBlock}>
+            <Grid item xs={12} className={classes.skillBlock} data-aos={"fade-left"}>
                 <Box className={classes.box} width={1} height="100%">
                     <Box className={classes.category} height="100%" >
                         <Typography variant="body1" align={"center"}>
@@ -49,14 +49,14 @@ class About extends Component {
     render() {
         const {classes} = this.props;
         return (
-            <div id={"About"} className={classes.root}>
+            <div id={"About"} className={classes.root} >
                 <Typography className={classes.title} variant="h3" align={"center"} color={"primary"}>
                     About Me
                 </Typography>
                 <Container>
                     <Grid container justify={"center"} spacing={5}>
                         <Grid item xs={12} md={5} >
-                            <div className={classes.profile}>
+                            <div className={classes.profile} data-aos={"fade-right"}>
                                 <img className={classes.image} src={profilepic} alt={"profilepic"}/>
                                 <Typography variant="h4" align={"center"} style={{marginBottom: "1rem", marginTop: "1rem"}}>
                                     Tan Yu Li, James
