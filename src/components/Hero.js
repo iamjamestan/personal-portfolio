@@ -12,7 +12,7 @@ class Hero extends Component {
     particlesConfig = {
         particles: {
             number: {
-                value: 100,
+                value: window.innerWidth < 600 ? 50 : 100,
             },
             size: {
                 value: 3,
