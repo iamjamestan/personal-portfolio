@@ -10,6 +10,10 @@ export default (theme) => ({
             boxShadow: props => props.isHero && "none",
         },
     },
+    appbar: {
+        width: "100vw",
+        left:"0"
+    },
     toolbar: {
         justifyContent:"space-between",
     },

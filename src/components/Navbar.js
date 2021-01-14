@@ -14,58 +14,13 @@ class Navbar extends Component {
     constructor(props){
         super(props);
         this.state = {mobileMoreAnchorEl:null};
-        this.handleMobileMenuOpen = this.handleMobileMenuOpen.bind(this);
-        this.handleMobileMenuClose = this.handleMobileMenuClose.bind(this);
-    }
-
-    handleMobileMenuOpen(e) {
-        this.setState({mobileMoreAnchorEl: e.target});
-    }
-    handleMobileMenuClose() {
-        this.setState({mobileMoreAnchorEl: null});
     }
 
     render() {
-        const mobileMenuId = 'primary-search-account-menu-mobile';
-        const {mobileMoreAnchorEl} = this.state;
-        const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
         const {isHero, classes} = this.props;
-        const renderMobileMenu = (
-            <Menu
-                anchorEl={mobileMoreAnchorEl}
-                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-                id={mobileMenuId}
-                keepMounted
-                transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-                open={isMobileMenuOpen}
-                onClose={this.handleMobileMenuClose}
-                className={classes.menu}
-            >
-                <HashLink to="#About">
-                    <MenuItem >
-                        About
-                    </MenuItem>
-                </HashLink>
-                <HashLink to="#Experience">
-                    <MenuItem >
-                        Experience
-                    </MenuItem>
-                </HashLink>
-                <HashLink to="#Projects">
-                    <MenuItem >
-                        Projects
-                    </MenuItem>
-                </HashLink>
-                <HashLink to="#Contact">
-                    <MenuItem >
-                        Contact
-                    </MenuItem>
-                </HashLink>
-            </Menu>
-        );
         return (
             <div className={classes.root}>
-                <AppBar position="fixed" color={isHero ? "transparent" : "primary"}>
+                <AppBar className={classes.appbar} position="fixed" color={isHero ? "transparent" : "primary"}>
                     <Toolbar className={classes.toolbar}>
                         <Typography variant="h5">
                             <HashLink smooth to="#">jamestanyuli</HashLink>
@@ -86,20 +41,8 @@ class Navbar extends Component {
                                 contact
                             </Button>
                         </HashLink>
-                        <div className={classes.mobile}>
-                            <IconButton
-                                aria-label="show more"
-                                aria-controls={mobileMenuId}
-                                onClick={this.handleMobileMenuOpen}
-                                aria-haspopup="true"
-                                color="inherit"
-                            >
-                                <MenuIcon />
-                            </IconButton>
-                        </div>
                     </Toolbar>
                 </AppBar>
-                {renderMobileMenu}
             </div>
         );
     }
