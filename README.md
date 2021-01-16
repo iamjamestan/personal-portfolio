@@ -2,7 +2,7 @@
 
 <p align="center"><img width="45%" src="src/images/portfolio.jpg"/><img width="45%" src="src/images/ContactMe.jpg"/></p>
 
-This website was built to summarise my academic and professional journey as a computer science undergraduate. It is accessible via [jamestanyuli.com](https://www.jamestanyuli.com/).
+This website was built to summarise my academic and professional journey as a computer science undergraduate, as well as to express my design language. Check it out at [jamestanyuli.com](https://www.jamestanyuli.com/).
 
 The core packages/dependencies used are:
 * [React](https://reactjs.org/)
