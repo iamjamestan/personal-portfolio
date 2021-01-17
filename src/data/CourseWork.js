@@ -4,6 +4,10 @@ export default [
         grade: "A"
     },
     {
+        module: "Discrete Structures",
+        grade: "A-"
+    },
+    {
         module: "Programming Methodology II",
         grade: "B+"
     },
