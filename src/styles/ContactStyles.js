@@ -4,6 +4,7 @@ const styles = (theme) => ({
         paddingBottom: `${theme.mixins.toolbar.minHeight * 1.5}px`,
         minHeight: `100vh`,
         [theme.breakpoints.down("sm")]: {
+            background: "linear-gradient(#0E1219,#1A2533)",
             height: "fit-content",
             paddingTop: `${theme.mixins.toolbar.minHeight * 1.2}px`,
             paddingBottom: `${theme.mixins.toolbar.minHeight * 0.5}px`
