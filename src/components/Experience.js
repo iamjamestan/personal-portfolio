@@ -26,7 +26,7 @@ class Experience extends Component {
                 {
                     e.details.map(d =>
                         <li>
-                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan", lineHeight:"1.2"}}>
+                            <Typography variant={"subtitle1"} align={"left"} style={{color: "tan", lineHeight:"1.2", marginBottom:"0.3em"}}>
                                 {d}
                             </Typography>
                         </li>
