@@ -18,7 +18,7 @@ export default [
             "Taught concepts pertaining to algorithmic analysis, sorting, hashing, heaps, trees and graphs.",
             "Attained a teaching score of 4.9/5.0 as compared to the department average of 4.2/5.0.",
             <Button variant="outlined" size={"small"} href="https://drive.google.com/file/d/1yKNj3xoXQdJC3S1ZnSZNifTctEqZZyTe/view?usp=sharing" color={"inherit"} target={"_blank"}>
-                View teaching report ↗
+                View teaching report
             </Button>
         ]
     },
