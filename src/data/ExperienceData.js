@@ -45,7 +45,7 @@ export default [
             "Oversaw 20 student Java projects and reinforced coding standards.",
             "Attained a teaching score of 4.3/5.0 as compared to the department average of 4.1/5.0.",
             <Button variant="outlined" size={"small"} href="https://drive.google.com/file/d/17H0IXpy13IVA-VC-E3R3ivMc6FmKn-mP/view?usp=sharing" color={"inherit"} target={"_blank"}>
-                View teaching report ↗
+                View teaching report
             </Button>
         ]
     },
