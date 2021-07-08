@@ -7,9 +7,8 @@ export default [
         title: "Software Engineer Intern",
         subHeading: "Visa Worldwide Pte Ltd, May 2021 - Present",
         details: [
-            "Enhanced existing features in Visa Automated Testing Portal (VATP) using Java and Maven.",
             "Automated cryptographic processes in VATP by writing cryptographic algorithms in a Java module.",
-            "Currently developing a real time dashboard for VATP."
+            "Integrated reportportal.io, an open source tool that provides a reporting dashboard with real-time analytics and automated test results visualization, to the VATP platform."
         ]
     },
     {
