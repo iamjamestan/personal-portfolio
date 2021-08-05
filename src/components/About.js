@@ -62,13 +62,13 @@ class About extends Component {
                                     Tan Yu Li, James
                                 </Typography>
                                 <Typography variant="h5" align={"center"}>
-                                    Year 2 Computer Science, NUS
+                                    Year 3 Computer Science, NUS
                                 </Typography>
                                 <Typography variant="h6" align={"center"}>
                                     NUS Merit Scholar
                                 </Typography>
                                 <Typography variant="body1" align={"center"} style={{marginTop: "1rem", marginBottom: "0.4rem"}}>
-                                    CAP: 4.75/5.00
+                                    CAP: 4.69/5.00
                                 </Typography>
                                 <Accordion className={classes.accordion} >
                                     <AccordionSummary

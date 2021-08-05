@@ -8,10 +8,6 @@ export default [
         grade: "A-"
     },
     {
-        module: "Programming Methodology II",
-        grade: "B+"
-    },
-    {
         module: "Computer Organisation",
         grade: "A+"
     },
@@ -40,7 +36,16 @@ export default [
         grade: "A-"
     },
     {
-        module: "Effective Communication for Computing Professionals",
+        module: "Computer Networks",
+        grade: "A+"
+    },
+    {
+        module: "Information Security",
         grade: "A"
     },
+    {
+        module: "Operating Systems",
+        grade: "B+"
+    },
+
 ]
