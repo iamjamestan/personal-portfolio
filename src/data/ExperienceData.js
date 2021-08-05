@@ -5,10 +5,11 @@ export default [
     {
         type:"item",
         title: "Software Engineer Intern",
-        subHeading: "Visa Worldwide Pte Ltd, May 2021 - Present",
+        subHeading: "Visa Worldwide Pte Ltd, May 2021 - Aug 2021",
         details: [
-            "Automated cryptographic processes in VATP by writing cryptographic algorithms in a Java module.",
-            "Integrated reportportal.io, an open source tool that provides a reporting dashboard with real-time analytics and automated test results visualization, to the VATP platform."
+            "Developed a Maven module that comprised of Visa’s cryptographic algorithms, automating the manual process of cryptogram testing for the team.",
+            "Integrated existing test suite with an open source tool, reportportal.io, reducing the manual labour of classifying test failures for every new test cycle.",
+            "Developed shell scripts and created Jenkins jobs that automate the deployment of the Visa Automated Testing Portal (VATP)."
         ]
     },
     {
