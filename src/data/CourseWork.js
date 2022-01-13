@@ -4,19 +4,7 @@ export default [
         grade: "A"
     },
     {
-        module: "Discrete Structures",
-        grade: "A-"
-    },
-    {
         module: "Computer Organisation",
-        grade: "A+"
-    },
-    {
-        module: "Quantitative Reasoning",
-        grade: "A+"
-    },
-    {
-        module: "Calculus for Computing",
         grade: "A+"
     },
     {
@@ -24,15 +12,11 @@ export default [
         grade: "A-"
     },
     {
-        module: "Linear Algebra I",
-        grade: "A+"
-    },
-    {
-        module: "Probability and Statistics",
-        grade: "A"
-    },
-    {
         module: "Software Engineering",
+        grade: "A-"
+    },
+    {
+        module: "Software Engineering Principles and Patterns",
         grade: "A-"
     },
     {
@@ -42,6 +26,18 @@ export default [
     {
         module: "Information Security",
         grade: "A"
+    },
+    {
+        module: "Computer Security",
+        grade: "A"
+    },
+    {
+        module: "Database Systems",
+        grade: "A"
+    },
+    {
+        module: "Interaction Design",
+        grade: "A-"
     },
     {
         module: "Operating Systems",

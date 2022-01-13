@@ -68,7 +68,7 @@ class About extends Component {
                                     NUS Merit Scholar
                                 </Typography>
                                 <Typography variant="body1" align={"center"} style={{marginTop: "1rem", marginBottom: "0.4rem"}}>
-                                    CAP: 4.69/5.00
+                                    CAP: 4.70/5.00
                                 </Typography>
                                 <Accordion className={classes.accordion} >
                                     <AccordionSummary
