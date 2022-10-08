@@ -5,6 +5,20 @@ export default [
     {
         type:"item",
         title: "Software Engineer Intern",
+        subHeading: "Stripe Payments Singapore, May 2022 - Aug 2022",
+        details: [
+            "Developed an automatic website verifier that scrapes website contents and verifies them against a set of requirements, reducing the manual labour of inspecting merchant websites.",
+            "Designed an extensible architecture for the website verifier, allowing engineers to easily change verification algorithms without having to modify other components in the pipeline.",
+            "Liaised with operations team to facilitate large-scale testing of the website verifier on merchant websites, providing visibility of its accuracy and reliability."
+        ]
+    },
+    {
+        type: "year",
+        year: 2022
+    },
+    {
+        type:"item",
+        title: "Software Engineer Intern",
         subHeading: "Visa Worldwide Pte Ltd, May 2021 - Aug 2021",
         details: [
             "Developed a Maven module that encapsulates Visa’s cryptographic algorithms, automating the manual process of cryptogram testing for the team.",
