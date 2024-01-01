@@ -39,7 +39,7 @@ class Hero extends Component {
                             Hello, I'm James
                         </Typography>
                         <Typography variant={"h5"} color={"Primary"} style={{marginTop: "1rem"}}>
-                            and I'm <Typed strings={["a computer science student", "a software engineer", "an educator", "a scholar"]} typeSpeed={40} backSpeed={45} loop/>
+                            and I'm <Typed strings={["a software engineer"]} typeSpeed={40} backSpeed={45}/>
                         </Typography>
                         <HashLink smooth to={"/#About"}>
                             <Button variant="contained" color={"secondary"} className={classes.button} endIcon={<ArrowDownwardIcon fontSize={"large"}/>}>

@@ -4,6 +4,20 @@ import Button from '@material-ui/core/Button';
 export default [
     {
         type:"item",
+        title: "Software Engineer",
+        subHeading: "Squarepoint Capital, Jan 2023 - Dec 2023",
+        details: [
+            "Collaborated closely with quantitative researchers to build and deploy robust data pipelines for various forms of datasets, enabling alpha creation and backtesting of quantitative strategies.",
+            "Fixed numerous production issues during support rotation, where I monitored ongoing deployments and troubleshooted problems in a timely manner, ensuring the integrity of our data pipelines.",
+            "Refactored existing data applications to improve their reliability and maintainability.",
+        ]
+    },
+    {
+        type: "year",
+        year: 2023
+    },
+    {
+        type:"item",
         title: "Software Engineer Intern",
         subHeading: "Stripe Payments Singapore, May 2022 - Aug 2022",
         details: [
@@ -68,18 +82,5 @@ export default [
     {
         type: "year",
         year: 2020
-    },
-    {
-        type:"item",
-        title: "Project Management Executive",
-        subHeading: "NUS Investment Society, Aug 2019 - May 2020",
-        details: [
-            "Head of logistics for NUS Invest Fiesta 2019, a three-day flagship event that aims to increase financial literacy and industry knowledge by bringing students and industry professionals together",
-            "Assigned roles to team members and liaised with stakeholders to ensure a smooth execution for event.",
-        ]
-    },
-    {
-        type: "year",
-        year: 2019
     },
 ];

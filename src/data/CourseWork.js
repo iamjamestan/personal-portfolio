@@ -1,10 +1,6 @@
 export default [
     {
-        module: "Programming Methodology",
-        grade: "A"
-    },
-    {
-        module: "Computer Organisation",
+        module: "Parallel Programming",
         grade: "A+"
     },
     {
@@ -12,19 +8,27 @@ export default [
         grade: "A-"
     },
     {
-        module: "Software Engineering",
+        module: "Software Engineering Principles and Patterns",
         grade: "A-"
     },
     {
-        module: "Software Engineering Principles and Patterns",
+        module: "Software Testing",
         grade: "A-"
+    },
+    {
+        module: "Operating Systems",
+        grade: "B+"
     },
     {
         module: "Computer Networks",
         grade: "A+"
     },
     {
-        module: "Information Security",
+        module: "Database Systems",
+        grade: "A"
+    },
+    {
+        module: "Big Data Systems for Data Science",
         grade: "A"
     },
     {
@@ -32,16 +36,7 @@ export default [
         grade: "A"
     },
     {
-        module: "Database Systems",
+        module: "Software Security",
         grade: "A"
     },
-    {
-        module: "Interaction Design",
-        grade: "A-"
-    },
-    {
-        module: "Operating Systems",
-        grade: "B+"
-    },
-
 ]
